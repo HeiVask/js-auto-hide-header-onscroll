@@ -1,0 +1,13 @@
+header {
+    height: 48px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    transition: transform 0.25s ease-in-out;
+    z-index: 4;
+}
+body { padding-top: 48px; }
+header.unpinned { transform: translateY(-48px);}
+header.pinned { transform: translateY(0); }
